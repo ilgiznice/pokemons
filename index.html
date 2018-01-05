@@ -6,10 +6,35 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./public/css/bootstrap.min.css">
   <title>Pokemons</title>
+  <style>
+    .pagination li {
+      padding: 10px;
+      font-size: 20px;
+      border: 1px solid #eee;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <div class="row pokemons"></div>
+    <div class="row pokemons">
+      <div class="col-sm-12">
+        <div class="row">
+          <div class="col-sm-4">
+            <input type="text" class="search">
+          </div>
+          <div class="col-sm-4 pull-right">
+            <select class="types">
+              <option value="">Все</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 text-center">
+        <ul class="pagination"></ul>
+      </div>
+    </div>
   </div>
   <script src="./public/js/jquery-3.2.1.min.js"></script>
   <script src="./public/js/index.js"></script>
